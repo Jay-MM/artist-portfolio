@@ -384,6 +384,29 @@ p {
   line-height: 1.75;
 }
 
+a:hover {
+  color:var(--electricBlue) !important;
+  background-color: rgba(0, 0, 0, 0.559);
+  text-decoration: underline;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2rem;
+}
+#contact button {
+  font-size: 1.75rem;
+  padding:.75rem;
+  color:var(--white) !important;
+  background-color: var(--sangre);
+  text-decoration: none
+}
+
+#contact button:hover {
+  font-weight: bolder;
+  background-color: rgb(255, 0, 55);
+  text-decoration:underline
+}
 /* sets hero in a relative position to the other elements, ensures the hero is above */
 .hero {
   position: relative;
