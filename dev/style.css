@@ -1,50 +1,54 @@
+/* sets hero in a relative position to the other elements, ensures the hero is above */
+
 .hero {
   position: relative;
+  overflow: hidden; /* ensures there is no white space*/
 }
 
+/* ensures the video container stays above the other sections */
 .video-container {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1000;
+  z-index: 1000; /* keeps the video container behind all other elements */
 }
-
+/* video styiling */
 .video {
   width: 100%;
   height: 59rem;
   object-fit: cover;
 }
-
+/* keeps the navbar ono the top of the page even when user scrolls down */
 .navbar-custom {
   position:fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1002;
+  z-index: 1002;/* ensures the navbar is ontop of the other elements*/
 
 }
 
 
-
+/* overrides bootsrap to ensure the text color is white */
 .navbar-nav .nav-link {
   color: white !important; 
 }
-
+/* keeps logo ontop and in the center  of the video  */
 .logo-overlay {
   position: absolute;
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  z-index: 1001; 
+  z-index: 1001; /* ensures the logo is ontop of the video but behind the navbar*/
 }
 
 .logo-overlay img {
   width: 36rem; 
   height: auto;
 }
-
+/* mobile-first responsive design */
 @media (max-width: 767px) {
   .logo-overlay {
     top: 9rem; 
@@ -60,6 +64,3 @@
   }
 }
  
-  #navbarNav {
-    background-color: rgba(89, 88, 91, 0.556) !important;
-  }
