@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.video {
+  width: 100%;
+  height: 59rem;
+  object-fit: cover;
+}
+
+.navbar-custom {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1002;
+
+}
+
+
+
+.navbar-nav .nav-link {
+  color: white !important; 
+}
+
+.logo-overlay {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 1001; 
+}
+
+.logo-overlay img {
+  width: 36rem; 
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .logo-overlay {
+    top: 9rem; 
+    transform: translateX(-50%); 
+  }
+
+  .logo-overlay img {
+    width: 22rem; 
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.5rem;
+  }
+}
