@@ -29,11 +29,28 @@ function handleScroll() {
     navbar.style.backgroundColor = "transparent";
   }
 }
+
 function navbarFn() {
   addClickEventListeners();
   window.addEventListener("scroll", handleScroll);
 }
 
+(function () {
+  emailjs.init(process.env.USER_ID || 'user_id');
+})();
+
+document.querySelector('#contact .btn-primary').addEventListener('click', function (event) {
+  event.preventDefault();
+
+  const contactForm = document.getElementById('contact-form');
+
+  emailjs.sendForm(process.env.EMAIL_SERVICE_ID || 'mail_id', 'contact_form', contactForm)
+    .then(function () {
+      console.log('SUCCESS!');
+    }, function (error) {
+      console.log('FAILED...', error);
+    });
+});
 
 
 // Call the functions

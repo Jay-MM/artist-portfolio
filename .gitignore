@@ -1,3 +1,6 @@
+# node modules
+node_modules
+
 # IDE directories
 .idea/
 .vscode/
@@ -11,3 +14,9 @@ Thumbs.db
 
 # Distribution directory
 dist/
+
+# config file 
+config.js
+
+# env. vars
+.env
