@@ -510,6 +510,10 @@ a:hover {
   }
 }
 
+#myNavbar {
+  transition: background-color 0.666s ease-in-out;
+}
+
 iframe {
   margin-top:9rem !important;
   line-height: 1.5;
